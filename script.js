@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.style.left = '0';
             navLinks.style.width = '100%';
             navLinks.style.flexDirection = 'column';
-            navLinks.style.background = '#ffffff';
+            navLinks.style.background = '#0A0A0A';
             navLinks.style.padding = '2rem 0';
+            navLinks.style.borderBottom = '1px solid #3A3A3A';
         });
     }
 
@@ -56,56 +57,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Network Particles Animation (particles.js)
+    // Tech Network Particles Animation (particles.js)
     if (document.getElementById('particles-js')) {
         particlesJS("particles-js", {
             "particles": {
                 "number": {
-                    "value": 100,
+                    "value": 120,
                     "density": { "enable": true, "value_area": 800 }
                 },
-                "color": { "value": ["#FF5722", "#FFC107", "#FF9800", "#F44336"] },
+                "color": { "value": ["#D9D9D9", "#BFBFBF", "#4A4A4A"] },
                 "shape": {
                     "type": "circle",
                     "stroke": { "width": 0, "color": "#000000" }
                 },
                 "opacity": {
-                    "value": 0.5,
+                    "value": 0.4,
                     "random": true,
                     "anim": { "enable": true, "speed": 1, "opacity_min": 0.1, "sync": false }
                 },
                 "size": {
-                    "value": 5,
+                    "value": 3,
                     "random": true,
-                    "anim": { "enable": true, "speed": 3, "size_min": 1, "sync": false }
+                    "anim": { "enable": true, "speed": 2, "size_min": 0.5, "sync": false }
                 },
                 "line_linked": {
                     "enable": true,
-                    "distance": 160,
-                    "color": "#FF9800",
-                    "opacity": 0.6,
-                    "width": 1.5
+                    "distance": 150,
+                    "color": "#D9D9D9",
+                    "opacity": 0.2,
+                    "width": 1
                 },
                 "move": {
                     "enable": true,
-                    "speed": 6,
+                    "speed": 1.5,
                     "direction": "none",
                     "random": true,
                     "straight": false,
                     "out_mode": "out",
                     "bounce": false,
-                    "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
+                    "attract": { "enable": true, "rotateX": 600, "rotateY": 1200 }
                 }
             },
             "interactivity": {
                 "detect_on": "window",
                 "events": {
-                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onhover": { "enable": true, "mode": "grab" },
                     "onclick": { "enable": true, "mode": "push" },
                     "resize": true
                 },
                 "modes": {
-                    "repulse": { "distance": 100, "duration": 0.4 },
+                    "grab": { "distance": 180, "line_linked": { "opacity": 0.5 } },
                     "push": { "particles_nb": 4 }
                 }
             },
