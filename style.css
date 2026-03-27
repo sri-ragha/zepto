@@ -1,14 +1,14 @@
 /* Base */
 :root {
-    --primary: #0077b6;          /* Bright Teal Blue (Accent) */
-    --bg-dark: #caf0f8;          /* Light Cyan (Main BG) */
-    --bg-light: #ade8f4;         /* Frosted Blue 2 */
-    --bg-secondary: #f0faff;     /* Very Light Sky */
-    --text-main: #03045e;        /* Deep Twilight (High Contrast Text) */
-    --text-muted: #0077b6;       /* Bright Teal Blue */
-    --text-dark: #003e8a;        /* Deep Blue headlings */
-    --accent-mid: #00b4d8;       /* Turquoise Surf */
-    --accent-steel: #48cae4;     /* Sky Aqua */
+    --primary: #04a6c2;          /* Bondi Blue (Accent) */
+    --bg-dark: #f0efeb;          /* Off-white (Main BG) */
+    --bg-light: #d6e2e9;         /* Light Blue Gray */
+    --bg-secondary: #f8f7f5;     /* Very Light Linen */
+    --text-main: #1a1a1a;        /* Graphite (High Contrast Text) */
+    --text-muted: #56ab91;       /* Zomp Teal Green */
+    --text-dark: #004d40;        /* Deep Teal Heading */
+    --accent-mid: #04a6c2;       /* Bondi Blue */
+    --accent-steel: #56ab91;     /* Teal Green Transition */
     --font-main: 'Inter', sans-serif;
     --border-radius: 12px;
 }
@@ -111,8 +111,8 @@ button {
 }
 
 .section-dark {
-    background-color: rgba(173, 232, 244, 0.3);
-    /* Frosted Blue 2, translucent */
+    background-color: rgba(214, 226, 233, 0.3);
+    /* Gray-Blue, translucent */
     backdrop-filter: blur(8px);
     color: var(--text-main);
     margin: 20px;
@@ -122,14 +122,14 @@ button {
 
 .section-light {
     background: transparent !important;
-    color: var(--text-dark) !important;
+    color: var(--text-main) !important;
     margin: 0;
     border-radius: 0;
     padding-bottom: 2rem;
 }
 
 .section-secondary {
-    background-color: rgba(202, 240, 248, 0.4) !important;
+    background-color: rgba(240, 239, 235, 0.4) !important;
     backdrop-filter: blur(8px);
     color: var(--text-main) !important;
     margin: 20px;
@@ -142,9 +142,9 @@ button {
     height: auto;
     border: 2px solid var(--accent-mid);
     border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(0, 119, 182, 0.1);
+    box-shadow: 0 15px 35px rgba(4, 166, 194, 0.1);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    filter: sepia(30%) hue-rotate(185deg) brightness(1.1) contrast(1.1) saturate(1.2); /* Sunlit Aqua Tint */
+    filter: sepia(10%) hue-rotate(160deg) brightness(1.05) contrast(1.05) saturate(1.2); /* Soft Teal Tint */
 }
 
 .metallic-expertise:hover {
@@ -172,7 +172,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background: rgba(202, 240, 248, 0.95);
+    background: rgba(240, 239, 235, 0.95);
     backdrop-filter: blur(15px);
     color: var(--text-main);
     z-index: 1000;
@@ -233,7 +233,7 @@ h4 {
     align-items: center;
     padding: 0 5%;
     position: relative;
-    background: linear-gradient(90deg, rgba(202, 240, 248, 0.95) 0%, rgba(202, 240, 248, 0.7) 50%, rgba(202, 240, 248, 0.95) 100%), url('images/hero-v3-final.png') center/cover no-repeat;
+    background: linear-gradient(90deg, rgba(240, 239, 235, 0.95) 0%, rgba(240, 239, 235, 0.75) 50%, rgba(240, 239, 235, 0.95) 100%), url('images/hero-v3-final.png') center/cover no-repeat;
     background-position: 70% center;
     border-radius: 30px;
     margin: 15px;

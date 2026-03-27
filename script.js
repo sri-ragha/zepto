@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     "value": 80,
                     "density": { "enable": true, "value_area": 800 }
                 },
-                "color": { "value": ["#0077b6", "#0096c7", "#00b4d8", "#03045e"] },
+                "color": { "value": ["#04a6c2", "#56ab91", "#d6e2e9", "#004d40"] },
                 "shape": {
                     "type": ["edge", "triangle"],
-                    "stroke": { "width": 1, "color": "rgba(3, 4, 94, 0.2)" }
+                    "stroke": { "width": 1, "color": "rgba(4, 166, 194, 0.2)" }
                 },
                 "opacity": {
                     "value": 0.4,
