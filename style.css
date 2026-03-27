@@ -180,18 +180,21 @@ h4 {
 }
 
 .logo {
-    font-size: 1.6rem;
-    font-weight: 800;
-    letter-spacing: -1.2px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    position: relative;
 }
 
-.logo span {
-    font-weight: 400;
-    color: #111;
-    letter-spacing: -0.5px;
+.logo img {
+    height: 85px; /* Standardised height */
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Removes white background on light linen */
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
 
 .nav-links {
