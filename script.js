@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.style.left = '0';
             navLinks.style.width = '100%';
             navLinks.style.flexDirection = 'column';
-            navLinks.style.background = '#0A0A0A';
+            navLinks.style.background = 'var(--bg-dark)';
             navLinks.style.padding = '2rem 0';
-            navLinks.style.borderBottom = '1px solid #3A3A3A';
+            navLinks.style.borderBottom = '1px solid var(--accent-mid)';
         });
     }
 
@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     "value": 80,
                     "density": { "enable": true, "value_area": 800 }
                 },
-                "color": { "value": ["#D9D9D9", "#BFBFBF", "#F2F2F2", "#4A4A4A"] },
+                "color": { "value": ["#0077b6", "#0096c7", "#00b4d8", "#03045e"] },
                 "shape": {
                     "type": ["edge", "triangle"],
-                    "stroke": { "width": 1, "color": "rgba(255,255,255,0.1)" }
+                    "stroke": { "width": 1, "color": "rgba(3, 4, 94, 0.2)" }
                 },
                 "opacity": {
                     "value": 0.4,
