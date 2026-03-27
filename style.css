@@ -1,13 +1,13 @@
 /* Base */
 :root {
-    --primary: #04a6c2;          /* Bondi Blue (Accent) */
+    --primary: #3fc1c0;          /* Teal/Cyan (Main Accent) */
     --bg-dark: #f0efeb;          /* Off-white (Main BG) */
     --bg-light: #d6e2e9;         /* Light Blue Gray */
     --bg-secondary: #f8f7f5;     /* Very Light Linen */
     --text-main: #1a1a1a;        /* Graphite (High Contrast Text) */
     --text-muted: #56ab91;       /* Zomp Teal Green */
     --text-dark: #004d40;        /* Deep Teal Heading */
-    --accent-mid: #04a6c2;       /* Bondi Blue */
+    --accent-mid: #3fc1c0;       /* Teal/Cyan */
     --accent-steel: #56ab91;     /* Teal Green Transition */
     --font-main: 'Inter', sans-serif;
     --border-radius: 12px;
@@ -140,11 +140,11 @@ button {
 .metallic-expertise {
     width: 100%;
     height: auto;
-    border: 2px solid var(--accent-mid);
+    border: 3px solid var(--primary);
     border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(4, 166, 194, 0.1);
+    box-shadow: 0 15px 35px rgba(63, 193, 192, 0.2);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    filter: sepia(10%) hue-rotate(160deg) brightness(1.05) contrast(1.05) saturate(1.2); /* Soft Teal Tint */
+    filter: sepia(15%) hue-rotate(145deg) brightness(1.1) contrast(1.1) saturate(1.3); /* Teal/Cyan Tint */
 }
 
 .metallic-expertise:hover {
