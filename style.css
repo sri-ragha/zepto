@@ -137,21 +137,24 @@ button {
     border: 1px solid var(--accent-mid);
 }
 
-.metallic-expertise {
+.metallic-expertise,
+.tech-icon-cyan {
     width: 100%;
     height: auto;
     border: 3px solid var(--primary);
     border-radius: 12px;
     box-shadow: 0 15px 35px rgba(63, 193, 192, 0.2);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    filter: sepia(15%) hue-rotate(145deg) brightness(1.1) contrast(1.1) saturate(1.3); /* Teal/Cyan Tint */
+    /* Force uniform Cyan (#3fc1c0) tint regardless of original image color */
+    filter: grayscale(100%) brightness(0.8) sepia(100%) hue-rotate(135deg) saturate(5) contrast(1.3);
 }
 
-.metallic-expertise:hover {
+.metallic-expertise:hover,
+.tech-icon-cyan:hover {
     transform: scale(1.03) translateY(-5px);
     border-color: var(--primary);
-    box-shadow: 0 20px 45px rgba(72, 202, 228, 0.2);
-    filter: grayscale(0%) brightness(1.1) contrast(1.1); /* Reveal full color on hover */
+    box-shadow: 0 20px 45px rgba(63, 193, 192, 0.35);
+    filter: grayscale(0%) brightness(1.1) contrast(1.1); /* Reveal full color on hover or keep it vivid */
 }
 
 h1,
@@ -180,21 +183,18 @@ h4 {
 }
 
 .logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -1.2px;
     display: flex;
     align-items: center;
-    position: relative;
+    gap: 8px;
 }
 
-.logo img {
-    height: 85px; /* Standardised height */
-    width: auto;
-    object-fit: contain;
-    mix-blend-mode: multiply; /* Removes white background on light linen */
-    transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-    transform: scale(1.05);
+.logo span {
+    font-weight: 400;
+    color: #111;
+    letter-spacing: -0.5px;
 }
 
 .nav-links {
